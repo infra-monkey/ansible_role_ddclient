@@ -1,0 +1,6 @@
+---
+ddclient_config:
+  protocol: "namecheap"
+  use_web: true
+  login: "{{ ddclient_login }}"
+  password: "{{ ddclient_password }}"

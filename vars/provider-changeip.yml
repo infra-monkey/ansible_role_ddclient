@@ -1,0 +1,5 @@
+---
+ddclient_config:
+  protocol: "changeip"
+  login: "{{ ddclient_login }}"
+  password: "{{ ddclient_password }}"

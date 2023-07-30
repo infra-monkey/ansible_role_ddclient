@@ -1,0 +1,5 @@
+---
+ddclient_config:
+  protocol: "dyndns2"
+  login: "{{ ddclient_login }}"
+  password: "{{ ddclient_password }}"

@@ -1,0 +1,5 @@
+---
+ddclient_config:
+  protocol: "dnspark"
+  login: "{{ ddclient_login }}"
+  password: "{{ ddclient_password }}"
