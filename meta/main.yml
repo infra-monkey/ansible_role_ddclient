@@ -1,6 +1,6 @@
 ---
 galaxy_info:
-  role_name: role_name
+  role_name: ddclient
   namespace: infra_monkey
   author: Antoine Gatineau
   description: Role description

@@ -1,0 +1,4 @@
+---
+ddclient_config:
+  protocol: "dslreports1"
+  server: "www.dslreports.com"

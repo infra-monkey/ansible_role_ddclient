@@ -1,1 +1,22 @@
 ---
+- name: "Include os specific variables"
+  ansible.builtin.include_vars: "packages-{{ ansible_os_family }}.yml"
+- name: "Call install-packages task for RedHat like systems"
+  ansible.builtin.include_tasks: install-packages-RedHat.yml
+  when: ansible_os_family == "RedHat"
+- name: "Call install-packages task for Debian like systems"
+  ansible.builtin.include_tasks: install-packages-Debian.yml
+  when: ansible_os_family == "Debian"
+
+- name: "Include dyndns provider specific variables"
+  ansible.builtin.include_vars: "provider-{{ ddclient_provider }}.yml"
+  when: ddclient_provider != "custom"
+
+- name: "Setup ddclient configuration"
+  ansible.builtin.template:
+    src: "ddclient.conf.j2"
+    dest: "/etc/ddclient.conf"
+    owner: root
+    group: root
+    mode: '0600'
+  notify: 'Restart ddclient'

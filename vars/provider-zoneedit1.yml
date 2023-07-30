@@ -1,0 +1,4 @@
+---
+ddclient_config:
+  protocol: "zoneedit1"
+  server: "www.zoneedit.com"
