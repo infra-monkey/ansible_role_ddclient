@@ -11,6 +11,6 @@ server={{ ddclient_config.server }}
 {% if ddclient_config.zone is defined %}
 server={{ ddclient_config.zone }}
 {% endif %}
-login={{ ddclient_config.login }}
-password='{{ ddclient_config.password }}'
+login={{ ddclient_login }}
+password='{{ ddclient_password }}'
 {{ ddclient_domains | join(',') }}

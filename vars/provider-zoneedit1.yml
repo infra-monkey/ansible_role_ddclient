@@ -2,5 +2,3 @@
 ddclient_config:
   protocol: "zoneedit1"
   server: "www.zoneedit.com"
-  login: "{{ ddclient_login }}"
-  password: "{{ ddclient_password }}"

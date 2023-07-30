@@ -1,6 +1,1 @@
 ---
-ddclient_provider: "dyndns2"
-ddclient_domains:
-  - "yourdomain.tld"
-ddclient_login: "you login"
-ddclient_password: "your password"
