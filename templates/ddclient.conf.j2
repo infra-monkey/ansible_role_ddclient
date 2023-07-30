@@ -1,0 +1,16 @@
+protocol={{ ddclient_config.protocol }}
+{% if ddclient_config.use_web is defined and ddclient_config.use_web %}
+use=web
+{% endif %}
+{% if ddclient_config.web_url is defined %}
+web={{ ddclient_config.web_url }}
+{% endif %}
+{% if ddclient_config.server is defined %}
+server={{ ddclient_config.server }}
+{% endif %}
+{% if ddclient_config.zone is defined %}
+server={{ ddclient_config.zone }}
+{% endif %}
+login={{ ddclient_config.login }}
+password='{{ ddclient_config.password }}'
+{{ ddclient_domains | join(',') }}

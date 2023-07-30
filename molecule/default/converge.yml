@@ -4,4 +4,4 @@
   connection: local
   become: true
   roles:
-    - role: "repo_name"
+    - role: "ansible_role_ddclient"
