@@ -1,4 +1,5 @@
-protocol={{ ddclient_config.protocol }}{% if ddclient_config.use_web is defined and ddclient_config.use_web %}
+protocol={{ ddclient_config.protocol }}
+{% if ddclient_config.use_web is defined and ddclient_config.use_web %}
 use=web
 {% endif %}
 {% if ddclient_config.use_ssl is defined and ddclient_config.use_ssl %}
